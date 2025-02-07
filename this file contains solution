@@ -1,0 +1,15 @@
+def black_square(input1,input2):
+    for i in range(len(input2)):
+        if input2[i]==str(1):
+            input2[i]=input1[0]
+        elif input2[i]==str(2):
+            input2[i]=input1[1]
+        elif input2[i]==str(3):
+            input2[i]=input1[2]
+        elif input2[i]==str(4):
+            input2[i]=input1[3]
+    return sum(input2)
+input1=list(map(int,input().split()))
+input2=list(input())
+print(black_square(input1,input2))
+
